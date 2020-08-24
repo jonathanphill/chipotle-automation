@@ -1,5 +1,6 @@
 package base;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,6 +20,9 @@ public class BasePage {
     public void launchUrl(String Url) throws  Exception{
         driver.get(Url);
         driver.manage().window().maximize();
+    }
+    public void waitForElementToBeClickable(By by){
+
     }
 
 
